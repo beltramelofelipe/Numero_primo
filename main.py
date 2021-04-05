@@ -1,0 +1,15 @@
+n = int(input("Verificar numeros primos ate: "))
+mult=0
+
+for nome in range(2,n):
+    if (n % nome == 0):
+        print("Múltiplo de",nome)
+        print(nome)
+        mult += 1
+
+if(mult==0):
+    print("É primo")
+else:
+    print("Tem",mult," múltiplos acima de 2 e abaixo de",n)
+
+ 
